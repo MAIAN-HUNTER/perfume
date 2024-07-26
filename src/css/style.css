@@ -1,0 +1,136 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.container img {
+  max-width: 300px;
+  max-height: 350px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.image {
+  max-height: 0px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 250px;
+  flex-direction: column;
+}
+
+.perfume {
+  display: flex;
+  padding: 15px 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.title {
+  text-align: start;
+}
+
+.perfume h2 {
+  padding-top: 20px;
+}
+
+.perfume p {
+  padding-top: 20px;
+}
+
+.value {
+  display: flex;
+  padding: 10px;
+  margin: 0px 10px;
+  align-items: center;
+}
+
+.price-now {
+  font-size: 30px;
+  font-family: "fraunces";
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.price-before {
+  text-decoration: line-through;
+  font-size: 12px;
+  padding: 10px;
+}
+.btn {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin: 10px 25px;
+  max-width: 190px;
+  background-color: hsl(158, 36%, 37%);
+}
+.btn svg {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    max-width: 500px;
+  }
+  .image img {
+    max-width: 280px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .title {
+    padding-top: 200px;
+  }
+  .perfume h2 {
+    padding-top: -100px;
+  }
+
+  .perfume p {
+    padding-top: -100px;
+  }
+
+  .value {
+    display: flex;
+    padding: 0px;
+    margin: 0px 10px;
+    align-items: center;
+  }
+
+  .price-now {
+    padding-left: 10px;
+  }
+
+  .price-before {
+    text-decoration: line-through;
+    font-size: 12px;
+    padding: 20px;
+  }
+  .btn {
+    margin-right: 0px;
+    margin-left: 20px;
+    max-width: 240px;
+  }
+}

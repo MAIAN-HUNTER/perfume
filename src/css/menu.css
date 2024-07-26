@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../../assets/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "fraunces";
+  src: url("../../assets/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+body {
+  background-color: bisque;
+}
+
+.title {
+  font-family: "montserrat";
+}
+
+h2 {
+  font-family: "fraunces";
+}
+
+p {
+  font-family: "montserrat";
+  font-size: 14px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
